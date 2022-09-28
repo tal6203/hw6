@@ -58,18 +58,18 @@
       if (salary <= 23000) {
         document.write(`you need to pay: ${mas}`);
       } else {
-        if (salary < 74000) {
+        if (salary <= 74000) {
           salary = salary - 23000;
           mas = mas + salary * 0.2;
           document.write(`you need to pay: ${mas}`);
         } else {
-          if (salary < 100000) {
+          if (salary <= 100000) {
             salary = salary - 23000;
             mas = mas + 51000 * 0.2;
             mas = mas + (salary - 51000) * 0.3;
             document.write(`you need to pay: ${mas}`);
           } else {
-            if (salary < 200000) {
+            if (salary <= 200000) {
               salary = salary - 23000;
               mas = mas + 51000 * 0.2;
               salary = salary - 51000;

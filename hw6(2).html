@@ -53,39 +53,33 @@
       }
       document.write(`The number of digits in the number ${num7} is: ${mone}`);
       document.write("<h2>targil 5</h2>");
-      salary = parseInt(prompt("Enter a salary:"));
-      mas = 2300;
+       mas = 0;
+       salary = parseInt(prompt("Enter a salary:"));
       if (salary <= 23000) {
+        mas = mas + (salary * 10) / 100;
         document.write(`you need to pay: ${mas}`);
       } else {
-        if (salary <= 74000) {
+        if (salary <= 46000) {
           salary = salary - 23000;
-          mas = mas + salary * 0.2;
+          mas = mas + 2300;
+          mas = mas + (salary * 20) / 100;
           document.write(`you need to pay: ${mas}`);
         } else {
-          if (salary <= 100000) {
-            salary = salary - 23000;
-            mas = mas + 51000 * 0.2;
-            mas = mas + (salary - 51000) * 0.3;
+          if (salary <= 120000) {
+            mas = mas + 6900;
+            salary = salary - 46000;
+            mas = mas + (salary * 30) / 100;
             document.write(`you need to pay: ${mas}`);
           } else {
-            if (salary <= 200000) {
-              salary = salary - 23000;
-              mas = mas + 51000 * 0.2;
-              salary = salary - 51000;
-              mas = mas + 26000 * 0.3;
-              salary = salary - 26000;
-              mas = mas + salary * 0.4;
+            if (salary <= 220000) {
+              mas = mas + 29100;
+              salary = salary - 74000;
+              mas = mas + (salary * 40) / 100;
               document.write(`you need to pay: ${mas}`);
             } else {
-              salary = salary - 23000;
-              mas = mas + 51000 * 0.2;
-              salary = salary - 51000;
-              mas = mas + 26000 * 0.3;
-              salary = salary - 26000;
-              mas = mas + 100000 * 0.4;
-              salary = salary - 100000;
-              mas = mas + salary * 0.5;
+              mas = mas + 69100;
+              salary = salary - 220000;
+              mas = mas + (salary * 50) / 100;
               document.write(`you need to pay: ${mas}`);
             }
           }
